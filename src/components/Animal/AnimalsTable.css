@@ -1,0 +1,91 @@
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animals-table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.animals-table th,
+.animals-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.animals-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.animals-table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.animals-table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.animals-table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.animals-table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 12px;
+    font-weight: bold;
+
+    font-size: 16px;
+    line-height: 2.0;
+    display: block;
+}
+
+.pagination select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.actions-button {
+    margin: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.actions-button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.actions-button.delete {
+    background-color: #f44336;
+    color: white;
+}
